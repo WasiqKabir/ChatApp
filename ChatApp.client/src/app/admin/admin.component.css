@@ -1,0 +1,20 @@
+
+
+.bg-color{
+    background-color: #e5fff6;
+}
+
+.activeChatter {
+    background-color:rgba(0, 0, 0, .03);;
+}
+
+.active { 
+    background-color: #e5fff6;
+    border-color: rgba(0, 0, 0, .125);
+    color: black;
+}
+
+.card-container {
+    max-height: 30rem;
+    overflow: auto;
+}

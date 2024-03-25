@@ -1,0 +1,6 @@
+<div #messageContainer [ngClass]="{'message-container-for-admin' : isAdmin, 'message-container' : !isAdmin}">
+  <div class="message" *ngFor="let message of selectedUserMessages" 
+  [ngClass]="{ 'sent-message': message.SenderId === userId, 'received-message': message.SenderId !== userId }">
+    <span [ngClass]="{ 'sent-message-bg': message.SenderId === userId}"> {{ message.Message }}</span>
+  </div>
+</div>

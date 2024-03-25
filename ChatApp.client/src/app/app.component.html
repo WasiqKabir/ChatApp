@@ -1,0 +1,13 @@
+
+<!-- <app-signup></app-signup> -->
+<!-- <app-login></app-login> -->
+
+<!-- <app-chat-page></app-chat-page> -->
+<div *ngIf="showButton" class="text-right mr-4 mt-4">
+    <Button class="btn btn-danger" (click)="logOut()">Logout</Button>
+</div>
+<div class="container">
+    <h3 *ngIf="userName" class="mt-2 mb-4 text-center">Welcome {{userName}}</h3>
+    <router-outlet></router-outlet>
+</div>
+

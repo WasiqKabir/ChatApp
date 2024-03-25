@@ -1,0 +1,11 @@
+F:\programming\ChatApp\Common\bin\Debug\net6.0\Common.deps.json
+F:\programming\ChatApp\Common\bin\Debug\net6.0\Common.dll
+F:\programming\ChatApp\Common\bin\Debug\net6.0\Common.pdb
+F:\programming\ChatApp\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+F:\programming\ChatApp\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+F:\programming\ChatApp\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+F:\programming\ChatApp\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+F:\programming\ChatApp\Common\obj\Debug\net6.0\Common.dll
+F:\programming\ChatApp\Common\obj\Debug\net6.0\refint\Common.dll
+F:\programming\ChatApp\Common\obj\Debug\net6.0\Common.pdb
+F:\programming\ChatApp\Common\obj\Debug\net6.0\ref\Common.dll

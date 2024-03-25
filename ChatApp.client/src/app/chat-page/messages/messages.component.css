@@ -1,0 +1,29 @@
+.message-container {
+    max-height: 26.8rem;
+    overflow-y: auto;
+    padding: 10px;
+  }
+
+  .message-container-for-admin {
+    max-height: 29.9rem;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .sent-message {
+    text-align: left;
+    margin-bottom: 0.4rem;
+    padding: 0.2rem;
+  }
+
+  .sent-message-bg {
+    background-color: #e5fff6;
+    color: black;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+  }
+  
+  .received-message {
+    text-align: right;
+    margin-bottom: 0.2rem;
+  }

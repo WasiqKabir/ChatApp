@@ -1,0 +1,15 @@
+F:\programming\ChatApp\BusinessEntities\bin\Debug\net6.0\BusinessEntities.deps.json
+F:\programming\ChatApp\BusinessEntities\bin\Debug\net6.0\BusinessEntities.dll
+F:\programming\ChatApp\BusinessEntities\bin\Debug\net6.0\BusinessEntities.pdb
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\BusinessEntities.GeneratedMSBuildEditorConfig.editorconfig
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\BusinessEntities.AssemblyInfoInputs.cache
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\BusinessEntities.AssemblyInfo.cs
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\BusinessEntities.csproj.CoreCompileInputs.cache
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\BusinessEntities.dll
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\refint\BusinessEntities.dll
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\BusinessEntities.pdb
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\ref\BusinessEntities.dll
+F:\programming\ChatApp\BusinessEntities\bin\Debug\net6.0\Common.dll
+F:\programming\ChatApp\BusinessEntities\bin\Debug\net6.0\Common.pdb
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\BusinessEntities.csproj.AssemblyReference.cache
+F:\programming\ChatApp\BusinessEntities\obj\Debug\net6.0\BusinessEntities.csproj.CopyComplete
