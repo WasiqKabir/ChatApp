@@ -1,10 +1,10 @@
 # ChatApp
 
 Technologies used in this project are. 
-SignalR
-.net Core 6
-Angular 13
-Bootstrap 4
-MSSql
-Ef Core
+SignalR\n
+.net Core 6\n
+Angular 13\n
+Bootstrap 4\n
+MSSql\n
+Ef Core\n
 It is a code first approach. Following N-Tier Architecture.
