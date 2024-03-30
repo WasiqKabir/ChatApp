@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BusinessServices.Services.Chat
 {
+    /// <summary>
+    /// Represents a service for managing chat operations.
+    /// </summary>
     public class ChatService : IChatService
     {
         private readonly DataContext _dbContext;
@@ -17,6 +20,7 @@ namespace BusinessServices.Services.Chat
             _dbContext = dbContext;
         }
 
+        /// <inheritdoc/>
         public async Task CreateChatConversation(string senderId, string receiverId)
         {
             Chats newChat1 = new()
@@ -35,6 +39,7 @@ namespace BusinessServices.Services.Chat
             await _dbContext.Chats.AddAsync(newChat2);
         }
 
+        /// <inheritdoc/>
         public async Task<Chats?> GetChat(string senderId, string receiverId)
         {
             Guid sender_Id = Guid.Parse(senderId);
