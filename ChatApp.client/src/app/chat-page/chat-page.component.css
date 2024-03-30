@@ -2,3 +2,9 @@
     max-height: 30rem;
     overflow: auto;
 }
+
+.active {
+    background-color: #e5fff6;
+    color: black;
+    border-color: rgba(0, 0, 0, .125);
+}

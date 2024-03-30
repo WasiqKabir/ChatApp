@@ -14,12 +14,18 @@ namespace BusinessServices.Services.MessagesService
         private readonly DataContext _dbcontext;
         private readonly IChatService _chatService;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MessageService"/> class.
+        /// </summary>
+        /// <param name="dbContext">The database context for accessing message-related data.</param>
+        /// <param name="chatService">The chat service for managing chat operations.</param>
         public MessageService(DataContext dbcontext, IChatService chatService)
         {
             _dbcontext = dbcontext;
             _chatService = chatService;
         }
 
+        /// <inheritdoc/>
         public async Task SaveMessage(Notification notification)
         {
             if (notification.Message == null || notification.SenderId == null || notification.ReceiverId == null)
@@ -39,6 +45,7 @@ namespace BusinessServices.Services.MessagesService
             await _dbcontext.SaveChangesAsync();
         }
 
+        /// <inheritdoc/>
         public async Task<List<MessageViewModel>> GetMessages(string senderId, string receiverId)
         {
             var senderIdGuid = Guid.Parse(senderId);
@@ -49,14 +56,11 @@ namespace BusinessServices.Services.MessagesService
                     || (x.SenderId == receiverIdGuid && x.ReceiverId == senderIdGuid))
            .OrderBy(x => x.CreatedOn);    
 
-            //var messages = await messagesQuery
-            //    .Skip((pageNumber - 1) * pageSize)
-            //    .Take(pageSize)
-            //    .ToListAsync();
             var messages = await messagesQuery.ToListAsync();
             return MessageMapper(messages);
         }
 
+        // Maps message entities to view models
         private List<MessageViewModel> MessageMapper(List<Messages> messages)
         {
             return messages.Select(message => new MessageViewModel 
@@ -69,6 +73,7 @@ namespace BusinessServices.Services.MessagesService
             }).ToList();
         }
 
+        // Updates chat record if exists, otherwise creates a new one
         private async Task HandleChatRecord(Notification notification)
         {
             var chatHistory = await _chatService.GetChat(notification.SenderId, notification.ReceiverId);

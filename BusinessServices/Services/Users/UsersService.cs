@@ -11,8 +11,10 @@ using System.Threading.Tasks;
 
 namespace BusinessServices.Services.Users
 {
+    ///<inheritdoc/>
     public partial class UserService 
     {
+        ///<inheritdoc/>
         public async Task<List<UserViewModel>> GetAll()
         {
             var usersQuery = _dbContext.Users.Where(x => !x.IsAdmin)
@@ -21,6 +23,7 @@ namespace BusinessServices.Services.Users
             return UserListMapper(users);
         }
 
+        /// <inheritdoc/>
         public async Task<UserViewModel> GetByUserId(Guid userId)
         {
             var user = await _dbContext.Users.FindAsync(userId);
@@ -30,6 +33,7 @@ namespace BusinessServices.Services.Users
             return UserMapper(user);
         }
 
+        /// <inheritdoc/>
         public async Task<List<UserViewModel>> GetOtherUsers(Guid userId)
         {
             var friends = await _dbContext.Users.Where(x => x.UserId != userId && !x.IsAdmin)
@@ -38,6 +42,7 @@ namespace BusinessServices.Services.Users
 
         }
 
+        /// <inheritdoc/>
         public async Task<List<UserViewModel>> ChattedUser(string userId)
         {
             Guid userGuid = Guid.Parse(userId);

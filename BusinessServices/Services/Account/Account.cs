@@ -13,11 +13,17 @@ namespace BusinessServices.Services.Account
     {
         private readonly DataContext _dbcontext;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Account"/> class.
+        /// </summary>
+        /// <param name="context">The database context for accessing user-related data.</param>
+
         public Account(DataContext context)
         {
             _dbcontext = context;
         }
 
+        /// <inheritdoc/>
         public async Task<UserViewModel> Login(LoginBindingModel user)
         {
             if (user == null)
@@ -37,6 +43,7 @@ namespace BusinessServices.Services.Account
 
         }
 
+        /// <inheritdoc/>
         public async Task<UserViewModel> Register(SignupBindingModel user)
         {
             if (user == null || user.UserName == null || user.Password == null)

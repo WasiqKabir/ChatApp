@@ -4,7 +4,7 @@
           <!-- User List -->
           <div class="card ">
               <div class="card-header">
-                  Users
+                  <b>Users</b>
               </div>
               <ul class="list-group list-group-flush card-container">
                   <li style="cursor: pointer;" class="list-group-item" *ngFor="let user of allUsers"
@@ -24,7 +24,7 @@
           <!-- User List -->
           <div *ngIf="chattedUsers.length > 0" class="card ">
               <div class="card-header bg-color">
-                  Chatted With
+                  <b>Chatted With</b>
               </div>
               <ul class="list-group list-group-flush card-container">
                   <li style="cursor: pointer;" class="list-group-item" *ngFor="let user of chattedUsers"
@@ -39,7 +39,7 @@
         <!-- Chat Messages -->
         <div class="card">
             <div class="card-header">
-                Chat
+                <b>Chat</b>
             </div>
             <app-messages [selectedUserMessages]="messages" [userId]="selectedChatterId"></app-messages>
  
